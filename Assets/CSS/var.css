@@ -2,8 +2,13 @@
     /* Background Color*/
     --primary-background: #181818;
     --secondary-background: #252424;
-    --vive-background: #0936c8;
-    --vive-hover-background: #051a5f;
+    /* Button Color*/
+    --blue-button: #0936c8;
+    --bluehover-button: #051a5f;
+    --neutral-button: #7a7a7a;
+    --neutralhover-button: #565656;
+    --red-button: #7e0000;
+    --redhover-button: #460000;
     /* Text Color*/
     --primary-light-text: #FFFFFF;
     --secondary-light-text: #b2b2b2;

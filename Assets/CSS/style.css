@@ -1,6 +1,12 @@
 @import "var.css";
 @import "normalize.css";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1 {
     font-family: 'Fustat', sans-serif;
     color: var(--primary-light-text);
@@ -39,38 +45,71 @@ small {
     font-size: 0.5rem;
 }
 
-section.StartQuiz {
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    flex-direction: column;
+    gap: 24px;
 }
 
-button {
+button.Start {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 24px 48px;
-    border-radius: 22px;
-    background-color: var(--vive-background);
+    border-radius: 24px;
+    background-color: var(--blue-button);
     border-color: rgba(240, 255, 255, 0.50);
 
-    p {
-        color: var(--primary-light-text);
-        font-family: 'Fustat', sans-serif;
-        font-size: 64px;
-        font-weight: 600;
-        margin: 0px;
+    color: var(--primary-light-text);
+    font-family: 'Fustat', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+
+    &:active {
+        border-color: rgba(240, 255, 255, 0.25);
+        background-color: var(--bluehover-button);
     }
 }
 
-button:active {
-    border-color: rgba(240, 255, 255, 0.25);
-    background-color: var(--vive-hover-background);
+button.Next {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: var(--neutral-button);
+    border: none;
+
+    font-family: 'Fustat', sans-serif;
+    color: var(--primary-light-text);
+    font-size: 16px;
+    font-weight: 400;
+
+    &:active {
+        border-color: rgba(240, 255, 255, 0.25);
+        background-color: var(--neutralhover-button);
+    }
+}
+
+button.Reset {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: var(--red-button);
+    border: none;
+
+    font-family: 'Fustat', sans-serif;
+    color: var(--primary-light-text);
+    font-size: 16px;
+    font-weight: 400;
+
+    &:active {
+        border-color: rgba(240, 255, 255, 0.25);
+        background-color: var(--redhover-button);
+    }
 }
 
 h2 {
-    color: var(--Secondary-light-text);
+    color: var(--primary-light-text);
     font-family: 'Fustat', sans-serif;
     font-size: 40px;
     font-style: normal;
