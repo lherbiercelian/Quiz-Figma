@@ -1,12 +1,6 @@
 @import "var.css";
 @import "normalize.css";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 h1 {
     font-family: 'Fustat', sans-serif;
     color: var(--primary-light-text);
@@ -27,9 +21,6 @@ header {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 80vh;
     background-color: var(--primary-background);
 }
@@ -50,37 +41,43 @@ small {
 
 section.StartQuiz {
     display: flex;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 100%;
 }
 
 button {
-    width: 200px;
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    border-radius: 21px;
-    border-bottom: 12px solid #2E2E2E;
-    background: #181818;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.45);
+    padding: 24px 48px;
+    border-radius: 22px;
+    background-color: var(--vive-background);
+    border-color: rgba(240, 255, 255, 0.50);
 
-    color: var(--primary-light-text);
-    font-family: "Fustat", sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    p {
+        color: var(--primary-light-text);
+        font-family: 'Fustat', sans-serif;
+        font-size: 64px;
+        font-weight: 600;
+        margin: 0px;
+    }
+}
 
+button:active {
+    border-color: rgba(240, 255, 255, 0.25);
+    background-color: var(--vive-hover-background);
 }
 
 h2 {
     color: var(--Secondary-light-text);
-    font-family: "Fustat", sans-serif;
+    font-family: 'Fustat', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.hidden {
+    display: none !important;
 }
