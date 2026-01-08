@@ -48,6 +48,7 @@ function NextQuestion() {
         questionElement.classList.add("hidden");
         let endElement = document.getElementById("EndQuiz");
         endElement.classList.remove("hidden");
+        NoteQuiz();
     }
 
     questionElement.classList.add("hidden");
@@ -193,5 +194,30 @@ function Q10() {
         score++;
         document.getElementById("Score").innerText = score;
         console.log("Score: " + score);
+    }
+}
+
+function NoteQuiz() {
+    let element = document.getElementById("Scorecolor");
+    let commentaire = document.getElementById("NoteQuiz");
+    document.getElementById("ScoreFinal").innerText = score;
+
+
+
+    if (score === 0) {
+        element.style.color = "#4d0404ff";
+        commentaire.innerText = "Tu l'as fait les yeux fermés ?";
+    } else if (score >= 1 && score <= 3) {
+        element.style.color = "#be0000ff";
+        commentaire.innerText = "Peut mieux faire !";
+    } else if (score >= 4 && score <= 6) {
+        element.style.color = "#0515ebff";
+        commentaire.innerText = "Tu cliques encore trop";
+    } else if (score >= 7 && score <= 9) {
+        element.style.color = "#1acc0aff";
+        commentaire.innerText = "Ta souris prend la poussière ?";
+    } else if (score === 10) {
+        element.style.color = "#ffd500ff";
+        commentaire.innerText = "Le dieu des raccourcis !";
     }
 }

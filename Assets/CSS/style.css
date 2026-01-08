@@ -44,6 +44,28 @@ header {
     gap: 4px;
     height: 10vh;
     background-color: var(--secondary-background);
+
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        p {
+            border: 1px solid;
+            border-radius: 8px;
+            border-color: var(--neutral-button);
+            padding: 4px 8px;
+
+            font-family: 'Fustat', sans-serif;
+            color: var(--secondary-light-text);
+            font-size: 16px;
+            font-weight: 400;
+
+            span {
+                font-weight: 800;
+            }
+        }
+    }
 }
 
 main {
@@ -183,4 +205,18 @@ button.Reset {
 
 .hidden {
     display: none !important;
+}
+
+section#EndQuiz {
+    p {
+        font-family: 'Fustat', sans-serif;
+        color: var(--secondary-light-text);
+        font-size: 64px;
+        font-weight: 400;
+    }
+
+    p.Commentaire {
+        color: var(--secondary-light-text);
+        font-size: 18px;
+    }
 }
