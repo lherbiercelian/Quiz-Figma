@@ -59,6 +59,7 @@ function NextQuestion() {
 function Reset() {
     currentQuestion = 0;
     score = 0;
+    document.getElementById("Score").innerText = score;
     let endElement = document.getElementById("EndQuiz");
     endElement.classList.add("hidden");
     let startElement = document.getElementById("StarQuiz");
