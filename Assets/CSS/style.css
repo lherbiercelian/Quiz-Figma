@@ -183,9 +183,33 @@ button.Start {
     font-size: 64px;
     font-weight: 600;
 
-    &:active {
+    &:hover {
         border-color: rgba(240, 255, 255, 0.25);
         background-color: var(--bluehover-button);
+    }
+}
+
+a.Settings {
+    text-decoration: none;
+
+    div.ButtonSettings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 64px;
+        border-radius: 24px;
+        background-color: var(--neutral-button);
+        border-color: rgba(240, 255, 255, 0.50);
+
+        color: var(--primary-light-text);
+        font-family: 'fustat', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+
+        &:hover {
+            border-color: rgba(240, 255, 255, 0.25);
+            background-color: var(--neutralhover-button);
+        }
     }
 }
 

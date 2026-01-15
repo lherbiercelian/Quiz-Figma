@@ -20,7 +20,6 @@
         <div>
             <p>Score : <span id="Score">0</span></p>
             <p>Time : <span id="Time">00.00</span></p>
-            <a href="Page html/settings.html"><img src="assets/Icons/Settings.svg" class="icon" alt="icon"></a>
         </div>
     </header>
     <main>
@@ -28,6 +27,13 @@
             <button onclick="startQuiz()" class="Start">
                 Commencer
             </button>
+            <div>
+                <a href="Page html/settings.html" class="Settings">
+                    <div class="ButtonSettings">
+                        Settings
+                    </div>
+                </a>
+            </div>
         </section>
         <section id="Question1" class="hidden">
             <h2>Question 1</h2>
@@ -35,53 +41,64 @@
             <article>
                 <label for="Q1Option1" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>F</p>
+                        <p class="Mac">F</p>
+                        <p class="Win hidden">F</p>
                     </div>
                     <input type="radio" name="Q1" id="Q1Option1" class="radio-input">
                 </label>
                 <label for="Q1Option2" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>G</p>
+                        <p class="Mac">G</p>
+                        <p class="Win hidden">G</p>
                     </div>
                     <input type="radio" name="Q1" id="Q1Option2" class="radio-input">
                 </label>
                 <label for="Q1Option3" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>G</p>
+                        <p class="Mac">G</p>
+                        <p class="Win hidden">G</p>
                     </div>
                     <input type="radio" name="Q1" id="Q1Option3" class="radio-input">
                 </label>
                 <label for="Q1Option4" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>F</p>
+                        <p class="Mac">F</p>
+                        <p class="Win hidden">F</p>
                     </div>
                     <input type="radio" name="Q1" id="Q1Option4" class="radio-input">
                 </label>
@@ -96,41 +113,49 @@
             <article>
                 <label for="Q2Option1" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>F</p>
+                        <p class="Mac">F</p>
+                        <p class="Win hidden">F</p>
                     </div>
                     <input type="radio" name="Q2" id="Q2Option1" class="radio-input">
                 </label>
                 <label for="Q2Option2" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>R</p>
+                        <p class="Mac">R</p>
+                        <p class="Win hidden">R</p>
                     </div>
                     <input type="radio" name="Q2" id="Q2Option2" class="radio-input">
                 </label>
                 <label for="Q2Option3" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>R</p>
+                        <p class="Mac">R</p>
+                        <p class="Win hidden">R</p>
                     </div>
                     <input type="radio" name="Q2" id="Q2Option3" class="radio-input">
                 </label>
                 <label for="Q2Option4" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>R</p>
+                        <p class="Mac">R</p>
+                        <p class="Win hidden">R</p>
                     </div>
                     <input type="radio" name="Q2" id="Q2Option4" class="radio-input">
                 </label>
@@ -145,53 +170,64 @@
             <article>
                 <label for="Q3Option1" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>C</p>
+                        <p class="Mac">C</p>
+                        <p class="Win hidden">C</p>
                     </div>
                     <input type="radio" name="Q3" id="Q3Option1" class="radio-input">
                 </label>
                 <label for="Q3Option2" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>K</p>
+                        <p class="Mac">K</p>
+                        <p class="Win hidden">K</p>
                     </div>
                     <input type="radio" name="Q3" id="Q3Option2" class="radio-input">
                 </label>
                 <label for="Q3Option3" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>C</p>
+                        <p class="Mac">C</p>
+                        <p class="Win hidden">C</p>
                     </div>
                     <input type="radio" name="Q3" id="Q3Option3" class="radio-input">
                 </label>
                 <label for="Q3Option4" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>K</p>
+                        <p class="Mac">K</p>
+                        <p class="Win hidden">K</p>
                     </div>
                     <input type="radio" name="Q3" id="Q3Option4" class="radio-input">
                 </label>
@@ -206,49 +242,59 @@
             <article>
                 <label for="Q4Option1" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>V</p>
+                        <p class="Mac">V</p>
+                        <p class="Win hidden">V</p>
                     </div>
                     <input type="radio" name="Q4" id="Q4Option1" class="radio-input">
                 </label>
                 <label for="Q4Option2" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>V</p>
+                        <p class="Mac">V</p>
+                        <p class="Win hidden">V</p>
                     </div>
                     <input type="radio" name="Q4" id="Q4Option2" class="radio-input">
                 </label>
                 <label for="Q4Option3" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>V</p>
+                        <p class="Mac">V</p>
+                        <p class="Win hidden">V</p>
                     </div>
                     <input type="radio" name="Q4" id="Q4Option3" class="radio-input">
                 </label>
                 <label for="Q4Option4" class="card">
                     <div class="Touch">
-                        <p>^</p>
+                        <p>⌃</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>V</p>
+                        <p class="Mac">V</p>
+                        <p class="Win hidden">V</p>
                     </div>
                     <input type="radio" name="Q4" id="Q4Option4" class="radio-input">
                 </label>
@@ -263,41 +309,49 @@
             <article>
                 <label for="Q5Option1" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>U</p>
+                        <p class="Mac">U</p>
+                        <p class="Win hidden">U</p>
                     </div>
                     <input type="radio" name="Q5" id="Q5Option1" class="radio-input">
                 </label>
                 <label for="Q5Option2" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>↵</p>
+                        <p class="Mac">↵</p>
+                        <p class="Win hidden">↵</p>
                     </div>
                     <input type="radio" name="Q5" id="Q5Option2" class="radio-input">
                 </label>
                 <label for="Q5Option3" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>↵</p>
+                        <p class="Mac">↵</p>
+                        <p class="Win hidden">↵</p>
                     </div>
                     <input type="radio" name="Q5" id="Q5Option3" class="radio-input">
                 </label>
                 <label for="Q5Option4" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>▲</p>
+                        <p class="Mac">▲</p>
+                        <p class="Win hidden">▲</p>
                     </div>
                     <input type="radio" name="Q5" id="Q5Option4" class="radio-input">
                 </label>
@@ -312,49 +366,59 @@
             <article>
                 <label for="Q6Option1" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>R</p>
+                        <p class="Mac">R</p>
+                        <p class="Win hidden">R</p>
                     </div>
                     <input type="radio" name="Q6" id="Q6Option1" class="radio-input">
                 </label>
                 <label for="Q6Option2" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>R</p>
+                        <p class="Mac">R</p>
+                        <p class="Win hidden">R</p>
                     </div>
                     <input type="radio" name="Q6" id="Q6Option2" class="radio-input">
                 </label>
                 <label for="Q6Option3" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>R</p>
+                        <p class="Mac">R</p>
+                        <p class="Win hidden">R</p>
                     </div>
                     <input type="radio" name="Q6" id="Q6Option3" class="radio-input">
                 </label>
                 <label for="Q6Option4" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>V</p>
+                        <p class="Mac">V</p>
+                        <p class="Win hidden">V</p>
                     </div>
                     <input type="radio" name="Q6" id="Q6Option4" class="radio-input">
                 </label>
@@ -369,49 +433,59 @@
             <article>
                 <label for="Q7Option1" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>D</p>
+                        <p class="Mac">D</p>
+                        <p class="Win hidden">D</p>
                     </div>
                     <input type="radio" name="Q7" id="Q7Option1" class="radio-input">
                 </label>
                 <label for="Q7Option2" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>D</p>
+                        <p class="Mac">D</p>
+                        <p class="Win hidden">D</p>
                     </div>
                     <input type="radio" name="Q7" id="Q7Option2" class="radio-input">
                 </label>
                 <label for="Q7Option3" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>B</p>
+                        <p class="Mac">B</p>
+                        <p class="Win hidden">B</p>
                     </div>
                     <input type="radio" name="Q7" id="Q7Option3" class="radio-input">
                 </label>
                 <label for="Q7Option4" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>B</p>
+                        <p class="Mac">B</p>
+                        <p class="Win hidden">B</p>
                     </div>
                     <input type="radio" name="Q7" id="Q7Option4" class="radio-input">
                 </label>
@@ -426,41 +500,49 @@
             <article>
                 <label for="Q8Option1" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>G</p>
+                        <p class="Mac">G</p>
+                        <p class="Win hidden">G</p>
                     </div>
                     <input type="radio" name="Q8" id="Q8Option1" class="radio-input">
                 </label>
                 <label for="Q8Option2" class="card">
                     <div class="Touch">
-                        <p>^</p>
+                        <p class="Mac">⌃</p>
+                        <p class="Win hidden">CTRL</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>G</p>
+                        <p class="Mac">G</p>
+                        <p class="Win hidden">G</p>
                     </div>
                     <input type="radio" name="Q8" id="Q8Option2" class="radio-input">
                 </label>
                 <label for="Q8Option3" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>G</p>
+                        <p class="Mac">G</p>
+                        <p class="Win hidden">G</p>
                     </div>
                     <input type="radio" name="Q8" id="Q8Option3" class="radio-input">
                 </label>
                 <label for="Q8Option4" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>G</p>
+                        <p class="Mac">G</p>
+                        <p class="Win hidden">G</p>
                     </div>
                     <input type="radio" name="Q8" id="Q8Option4" class="radio-input">
                 </label>
@@ -475,41 +557,49 @@
             <article>
                 <label for="Q9Option1" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>O</p>
+                        <p class="Mac">O</p>
+                        <p class="Win hidden">O</p>
                     </div>
                     <input type="radio" name="Q9" id="Q9Option1" class="radio-input">
                 </label>
                 <label for="Q9Option2" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>O</p>
+                        <p class="Mac">O</p>
+                        <p class="Win hidden">O</p>
                     </div>
                     <input type="radio" name="Q9" id="Q9Option2" class="radio-input">
                 </label>
                 <label for="Q9Option3" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>Y</p>
+                        <p class="Mac">Y</p>
+                        <p class="Win hidden">Y</p>
                     </div>
                     <input type="radio" name="Q9" id="Q9Option3" class="radio-input">
                 </label>
                 <label for="Q9Option4" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>Y</p>
+                        <p class="Mac">Y</p>
+                        <p class="Win hidden">Y</p>
                     </div>
                     <input type="radio" name="Q9" id="Q9Option4" class="radio-input">
                 </label>
@@ -524,39 +614,47 @@
             <article>
                 <label for="Q10Option1" class="card">
                     <div class="Touch">
-                        <p>⌘</p>
+                        <p class="Mac">⌘</p>
+                        <p class="Win hidden">Ctrl</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>L</p>
+                        <p class="Mac">L</p>
+                        <p class="Win hidden">L</p>
                     </div>
                     <input type="radio" name="Q10" id="Q10Option1" class="radio-input">
                 </label>
                 <label for="Q10Option2" class="card">
                     <div class="Touch">
-                        <p>⇧</p>
+                        <p class="Mac">⇧</p>
+                        <p class="Win hidden">⇧</p>
                     </div>
                     <p class="plus">+</p>
                     <div class="Touch">
-                        <p>L</p>
+                        <p class="Mac">L</p>
+                        <p class="Win hidden">L</p>
                     </div>
                     <input type="radio" name="Q10" id="Q10Option2" class="radio-input">
                 </label>
                 <label for="Q10Option3" class="card">
                     <div class="Touch">
-                        <p>Alt</p>
+                        <p class="Mac">⌥</p>
+                        <p class="Win hidden">Alt</p>
                     </div>
                     <div class="Touch">
-                        <p>L</p>
+                        <p class="Mac">L</p>
+                        <p class="Win hidden">L</p>
                     </div>
                     <input type="radio" name="Q10" id="Q10Option3" class="radio-input">
                 </label>
                 <label for="Q10Option4" class="card">
                     <div class="Touch">
-                        <p>^</p>
+                        <p class="Mac">⌃</p>
+                        <p class="Win hidden">CTRL</p>
                     </div>
                     <div class="Touch">
-                        <p>L</p>
+                        <p class="Mac">L</p>
+                        <p class="Win hidden">L</p>
                     </div>
                     <input type="radio" name="Q10" id="Q10Option4" class="radio-input">
                 </label>

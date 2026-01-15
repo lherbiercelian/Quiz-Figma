@@ -7,7 +7,6 @@
     <title>settings</title>
     <link rel="stylesheet" href="../Assets/CSS/style.CSS">
     <link rel="stylesheet" href="../Assets/CSS/settings.css">
-    <script src="Assets/JS/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,9 +17,6 @@
 <body>
     <header>
         <h1>FigQuiz</h1>
-        <div>
-            <a href="../index.html"><img src="../Assets/Icons/Settings.svg" class="icon" alt="icon"></a>
-        </div>
     </header>
     <main>
         <section>
@@ -28,8 +24,8 @@
             <article>
                 <div class="setting">
                     <h3>Timeur (30s)</h3>
-                    <label class="toggle-switch">
-                        <input type="checkbox" disabled>
+                    <label id="timer" class="toggle-switch">
+                        <input type="checkbox">
                         <div class="toggle-switch-background">
                             <div class="toggle-switch-handle"></div>
                         </div>
@@ -44,7 +40,7 @@
                         </div>
                     </label>
                 </div>
-                <div class="radio-inputs">
+                <div class="radio-inputs" id="Selectdivice">
                     <label class="radio">
                         <input type="radio" name="radio" checked="">
                         <span class="name">Mac</span>
@@ -54,12 +50,20 @@
                         <span class="name">Windows</span>
                     </label>
                 </div>
+
             </article>
+            <a href="../index.html" class="Settings">
+                <div class="ButtonSettings">
+                    Home
+                </div>
+            </a>
         </section>
     </main>
     <footer>
         <small>© 2025 FigQuiz. Tous droits réservés.</small>
     </footer>
+
+    <script src="../Assets/JS/script.js"></script>
 </body>
 
 </html>

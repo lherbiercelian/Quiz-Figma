@@ -1,5 +1,7 @@
 let currentQuestion = 0;
 let score = 0;
+let timerInterval;
+const timeDisplay = document.getElementById("Time");
 
 function startQuiz() {
     const startSection = document.getElementById("StarQuiz");
@@ -11,6 +13,7 @@ function startQuiz() {
 
     questionElement.classList.remove("hidden");
     console.log("Quiz started");
+    startTimer();
 }
 
 function NextQuestion() {
@@ -55,11 +58,14 @@ function NextQuestion() {
     currentQuestion++;
     let nextElement = document.getElementById("Question" + currentQuestion);
     nextElement.classList.remove("hidden");
+    startTimer();
 }
 
 function Reset() {
     currentQuestion = 0;
     score = 0;
+    clearInterval(timerInterval);
+    timeDisplay.innerText = "00.00";
     document.getElementById("Score").innerText = score;
     let endElement = document.getElementById("EndQuiz");
     endElement.classList.add("hidden");
@@ -198,6 +204,7 @@ function Q10() {
 }
 
 function NoteQuiz() {
+    clearInterval(timerInterval);
     let element = document.getElementById("Scorecolor");
     let commentaire = document.getElementById("NoteQuiz");
     document.getElementById("ScoreFinal").innerText = score;
@@ -219,5 +226,46 @@ function NoteQuiz() {
     } else if (score === 10) {
         element.style.color = "#ffd500ff";
         commentaire.innerText = "Le dieu des raccourcis !";
+    }
+}
+
+const timer = document.getElementById('timer');
+const timerInput = document.querySelector('input');
+
+timerInput.addEventListener('change', () => {
+    if (timerInput.checked) {
+        console.log('Timer active: true');
+        localStorage.setItem("Timer", "true");
+    } else {
+        console.log('Timer active: false');
+        localStorage.setItem("Timer", "false");
+    }
+});
+
+function startTimer() {
+    clearInterval(timerInterval);
+
+    let timerEnabled = localStorage.getItem("Timer");
+
+    if (timerEnabled === "true") {
+        let timeLeft = 30;
+        timeDisplay.innerText = timeLeft + ".00";
+
+        timerInterval = setInterval(() => {
+            timeLeft--;
+
+            if (timeLeft < 10) {
+                timeDisplay.innerText = "0" + timeLeft + ".00";
+            } else {
+                timeDisplay.innerText = timeLeft + ".00";
+            }
+
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                NextQuestion();
+            }
+        }, 1000);
+    } else {
+        timeDisplay.innerText = "00.00";
     }
 }
