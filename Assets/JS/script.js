@@ -1,10 +1,20 @@
-let timerEnabled = localStorage.getItem("Timer");
+let timerEnabled = localStorage.getItem("Timer") === "true";
 let currentQuestionIndex = 0;
 let score = 0;
 let timerInterval;
+let finalQuestions = [];
 const timeDisplay = document.getElementById("Time");
 
 function startQuiz() {
+
+    const isRandom = localStorage.getItem("Random") === "true";
+
+    if (isRandom) {
+        finalQuestions = [...questions].sort(() => Math.random() - 0.5);
+    } else {
+        finalQuestions = [...questions];
+    }
+
     timeDisplay.innerText = "00";
     const startSection = document.getElementById("StarQuiz");
     startSection.classList.add("hidden");
@@ -21,15 +31,16 @@ function startQuiz() {
 }
 
 function displayQuestion(index) {
-    if (index >= questions.length) {
+    if (index >= finalQuestions.length) {
         finishQuiz();
         return;
     }
 
-    const question = questions[index];
+    const question = finalQuestions[index];
     const container = document.getElementById('Quizcontent');
     container.classList.remove('hidden');
     container.innerHTML = "";
+    const currentMode = localStorage.getItem("keyboard") || "Mac";
 
     let cardsHTML = "";
 
@@ -40,12 +51,21 @@ function displayQuestion(index) {
         for (let j = 0; j < option.keys.length; j++) {
             const k = option.keys[j];
 
-            keysHTML += `
-            <div class="Touch">
-                <p class="Mac">${k.mac}</p>
-                <p class="Win hidden">${k.win}</p>
-            </div>
-            `;
+            if (currentMode === "Windows") {
+                keysHTML += `
+                <div class="Touch">
+                    <p class="Mac hidden">${k.mac}</p>
+                    <p class="Win">${k.win}</p>
+                </div>
+                `;
+            } else {
+                keysHTML += `
+                <div class="Touch">
+                    <p class="Mac">${k.mac}</p>
+                    <p class="Win hidden">${k.win}</p>
+                </div>
+                `;
+            }
 
             if (j < option.keys.length - 1) {
                 keysHTML += '<p class="plus">+</p>';
@@ -64,16 +84,16 @@ function displayQuestion(index) {
         <h2>${question.title}</h2>
         <h3>${question.subtitle}</h3>
         <article>${cardsHTML}</article>
-        <button onclick="checkAnswer()" class="Next">Suivant</button>
+        <button onclick="checkQuiz()" class="Next">Suivant</button>
     `;
 }
 
-function checkAnswer() {
+function checkQuiz() {
     const selectedInput = document.querySelector('input[name="reponse"]:checked');
 
     if (selectedInput) {
         const selectedIndex = parseInt(selectedInput.value);
-        const question = questions[currentQuestionIndex];
+        const question = finalQuestions[currentQuestionIndex];
 
         if (question.options[selectedIndex].isCorrect) {
             score++;

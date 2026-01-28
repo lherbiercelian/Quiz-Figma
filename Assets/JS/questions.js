@@ -270,8 +270,8 @@ const questions = [
             },
             {
                 keys: [
-                    { mac: "⌃", win: "CTRL" },
-                    { mac: "G", win: "G" }
+                    { mac: "⌃", win: "Ctrl" },
+                    { mac: "G", win: "G" },
                 ],
                 isCorrect: true
             },
@@ -354,7 +354,7 @@ const questions = [
             },
             {
                 keys: [
-                    { mac: "⌃", win: "CTRL" },
+                    { mac: "⌃", win: "Ctrl" },
                     { mac: "L", win: "L" }
                 ],
                 isCorrect: false
