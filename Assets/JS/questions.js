@@ -1,7 +1,7 @@
 const questions = [
     {
         id: 1,
-        title: "Question 1",
+        title: "Question",
         subtitle: "Raccourci : Frame selection",
         options: [
             {
@@ -39,7 +39,7 @@ const questions = [
     },
     {
         id: 2,
-        title: "Question 2",
+        title: "Question",
         subtitle: "Raccourci : afficher la règles",
         options: [
             {
@@ -74,7 +74,7 @@ const questions = [
     },
     {
         id: 3,
-        title: "Question 3",
+        title: "Question",
         subtitle: "Raccourci : créer un composant",
         options: [
             {
@@ -112,7 +112,7 @@ const questions = [
     },
     {
         id: 4,
-        title: "Question 4",
+        title: "Question",
         subtitle: "Raccourci : coller les propriétés",
         options: [
             {
@@ -149,7 +149,7 @@ const questions = [
     },
     {
         id: 5,
-        title: "Question 5",
+        title: "Question",
         subtitle: "Raccourci : sélectionner le parent",
         options: [
             {
@@ -184,7 +184,7 @@ const questions = [
     },
     {
         id: 6,
-        title: "Question 6",
+        title: "Question",
         subtitle: "Raccourci : paste to replace",
         options: [
             {
@@ -221,7 +221,7 @@ const questions = [
     },
     {
         id: 7,
-        title: "Question 7",
+        title: "Question",
         subtitle: "Raccourci : Détacher une instance",
         options: [
             {
@@ -258,7 +258,7 @@ const questions = [
     },
     {
         id: 8,
-        title: "Question 8",
+        title: "Question",
         subtitle: "Raccourci : Masquer/Afficher les Grilles (Layout Grids)",
         options: [
             {
@@ -293,7 +293,7 @@ const questions = [
     },
     {
         id: 9,
-        title: "Question 9",
+        title: "Question",
         subtitle: "Raccourci : Mode “Outline” (Vue fil de fer)",
         options: [
             {
@@ -328,7 +328,7 @@ const questions = [
     },
     {
         id: 10,
-        title: "Question 10",
+        title: "Question",
         subtitle: "Raccourci : Réduire tous les calques (Collapse Layers)",
         options: [
             {
